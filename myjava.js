@@ -3,13 +3,10 @@ function exchange(){
     let f= document.getElementById('from').value;
     let t= document.getElementById('to').value;
     let b
-    if (f==t){
-        b=1;
-    }
     if (f=='vietnam'&& t=='USD'){
         b = 1/22742.5;
     }
-    if (f=='ameria'&& t=='VND'){
+    if (f=='america'&& t=='VND'){
         b = 22742;
     }
     let reSult= b*a
