@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <script src="myjava.js"></script>
+</head>
+<style>
+    .convert{
+        background-color: #a76ee7;
+        color: white;
+    }
+</style>
+<body>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <td>&nbsp;</td>
+            <th>From Currency</th>
+            <td>&nbsp;</td>
+            <th>To Currency</th>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td><label><input type="text" id="amount"></label></td>
+            <td>&nbsp;</td>
+            <td><label><select name="from" id="from">
+                <option value="vietnam" >VietNam</option>
+                <option value="america" >America</option>
+            </select></label></td>
+            <td>&nbsp;</td>
+            <td><label><select name="to" id="to">
+                <option value="USD">USD</option>
+                <option value="VND">VND</option>
+            </select></label></td>
+            <td>&nbsp;</td>
+            <td><button class="convert" onclick="exchange()">Convert</button></td>
+        </tr>
+    </table>
+<p style="color: blue" id="result1"></p>
+</body>
+</html>
